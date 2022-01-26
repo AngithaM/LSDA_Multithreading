@@ -1,16 +1,12 @@
 /**
- * Enhance the code given above so that, in addition to the array of strings, also an array of numbers of type Double (with 16 
-elements of your choice) is sorted, using the given sorting algorithm. As a part of this, provide a suitable comparator 
-(Comparator instance) for Double numbers.
-Your main-method should print both the original and the sorted array of numbers.
-[25 marks]
+ * Enhance the first code given above so that lambda expressions are used
  */
 package LSDA;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Sort_for_Q2<T> { // Class Sort is a generic class with type parameter T
+public class Sort_with_lambda<T> { // Class Sort is a generic class with type parameter T
 	T[] array; // The array of objects of type T we want to sort
 	Comparator<T> comp; // A Comparator instance suitable for comparing objects of type T
 
@@ -37,7 +33,7 @@ public class Sort_for_Q2<T> { // Class Sort is a generic class with type paramet
 		 * } };
 		 */
 		//Commented out for the lambda expression: End
-		Sort_for_Q2<String> sortStrings = new Sort_for_Q2<String>();
+		Sort_with_lambda<String> sortStrings = new Sort_with_lambda<String>();
 		// Array length must be a power of 2.
 		String[] arrayOfStrings = { "Blue", "Yellow", "Almond", "Onyx", "Peach", "Gold", "Red", "Melon", "Lava",
 				"Beige", "Aqua", "Lilac", "Capri", "Orange", "Mauve", "Plum" };
@@ -46,7 +42,7 @@ public class Sort_for_Q2<T> { // Class Sort is a generic class with type paramet
 		sortStrings.sort(arrayOfStrings, compString);
 		System.out.println("Sorted array: " + Arrays.toString(arrayOfStrings));
 
-		Sort_for_Q2<Double> sortDouble = new Sort_for_Q2<Double>();
+		Sort_with_lambda<Double> sortDouble = new Sort_with_lambda<Double>();
 
 		// Arraylist of Double
 		Double[] arrayOfDouble = { 1.2, 3.2, -0.1, 2.3333, 0.11, -0.88, 0.112, 1.99 };
