@@ -1,26 +1,11 @@
-/**
- * 
- * Modify either your code for any of the previous questions or the code provided on this assignment sheet so that it makes 
-sensible use of parallel computing (using multithreading) in the body of method sort(int low, int n). 
-* Do not change the algorithm otherwise and do not use any other sorting routine (such as one of Java’s built-in sorting 
-approaches). 
-* Do not change any code outside the body of method sort(int low, int n).
-* Use only the "traditional" (Java <= 7) approach to multithreading for this question (using class Thread explicitly); do not use, e.g.,
-parallel Java 8 Streams.
-* It is not required that your parallelized code runs actually faster than the original code (no need to run any benchmarks) - but it 
-should make use of concurrent threads in a sensible way.
-[50 Marks]
- */
-/**
- * * ANSWER 1: Using multiple threads to run sort of Array of Strings and Double in parallel
-**/
+
 package codes;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
 
-public class Sort_for_Q3_2_Threads<T> { // Class Sort is a generic class with type parameter T
+public class Sort_with_multithreading_2<T> { // Class Sort is a generic class with type parameter T
 	T[] array; // The array of objects of type T we want to sort
 	Comparator<T> comp; // A Comparator instance suitable for comparing objects of type T
 
