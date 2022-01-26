@@ -1,11 +1,4 @@
-/**
- * **Modify your code for Q1 so that the comparator for strings and the comparator for Double numbers are provided as Lambda 
-Expressions. Hint: this requires only very little code.
-Do not change the sorting algorithm otherwise and do not use any other sorting routine (such as one of Java's built-in sorting 
-approaches).
-[25 marks]
 
- */
 package LSDA;
 
 import java.util.Arrays;
